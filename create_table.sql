@@ -1,0 +1,23 @@
+CREATE TABLE youtube_data (
+   video_id VARCHAR,
+   trending_date VARCHAR(10),
+   title VARCHAR,
+   channel_title VARCHAR,
+   category_id INTEGER,
+   publish_time TIMESTAMP,
+   tags VARCHAR,
+   views INTEGER,
+   likes INTEGER,
+   dislikes INTEGER,
+   comment_count INTEGER,
+   thumbnail_link VARCHAR,
+   comments_disabled BOOLEAN,
+   ratings_disabled BOOLEAN,
+   video_error_or_removed BOOLEAN,
+   description TEXT,
+   kind VARCHAR,
+   etag VARCHAR,
+   snippet_channelId VARCHAR,
+   category VARCHAR,
+   snippet_assignable BOOLEAN
+);
