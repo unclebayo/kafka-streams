@@ -31,7 +31,7 @@ services:
       - "9000:9000"
     environment:
       KAFKA_BROKERCONNECT: "kafka:29092"
-      JVM_OPTS: "-Xms16M -Xmx48M -Xss180K -XX:-TieredCompilation -XX:+UseStringDeduplication -noverify"
+      JVM_OPTS: "-Xms256M -Xmx256M -Xss512K -XX:-TieredCompilation -XX:+UseStringDeduplication -noverify"
     depends_on:
       - "kafka"
     networks:
@@ -42,7 +42,7 @@ services:
     container_name: local_pgdb
     restart: always
     ports:
-      - "54320:5432"
+      - "5432:5432"
     environment:
       POSTGRES_USER: user
       POSTGRES_PASSWORD: admin
